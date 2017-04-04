@@ -213,7 +213,7 @@ class LaunchtreeWidget(QWidget):
 	def _is_launch_file(self, path):
 		if not os.path.isfile(path): return False
 		(root, ext) = os.path.splitext(path)
-		if ext != '.launch': return False
+		if ext not in ('.launch', '.test'): return False
 		return True
 
 	def launch_entry_changed(self, current, previous):
