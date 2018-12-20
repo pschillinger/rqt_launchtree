@@ -321,7 +321,7 @@ class LaunchtreeWidget(QWidget):
 
 			show &= search_text in entry.text(0)
 			if show:
-				entry.setBackgroundColor(0, self._highlight_color if highlight else self._neutral_color)
+				entry.setBackground(0, self._highlight_color if highlight else self._neutral_color)
 
 			if entry.childCount() > 0:
 				not_empty = any(map(filter_launch_entry, map(entry.child, range(entry.childCount()))))
