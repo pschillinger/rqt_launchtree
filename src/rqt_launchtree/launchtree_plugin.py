@@ -3,7 +3,8 @@ import rospy
 from rqt_gui_py.plugin import Plugin
 
 from python_qt_binding.QtCore import Qt
-from python_qt_binding.QtGui import QInputDialog
+# from python_qt_binding.QtGui import QInputDialog
+from python_qt_binding.QtWidgets import QInputDialog
 
 from rqt_launchtree.launchtree_widget import LaunchtreeWidget
 
